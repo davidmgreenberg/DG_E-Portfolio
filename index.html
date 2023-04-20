@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d20af9d4c.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("pmE2Ru5hNBAHnk6tq");
+        })();
+     </script>
+    
+      
+</head>
+<body>
+    <header>
+		<nav>
+            <div class="nav__container">
+            <img id='personal-logo' src="./resources/David(1).png" alt="">
+            <ul>
+                <li><a class='link__hover-effect' href="#contact">Contact</a></li>
+                <li><a class='link__hover-effect' href="#references">References</a></li>
+                <li class="dropdown">
+                    <a class='link__hover-effect' href ="#table-of-contents">Table of Contents</a>
+                    <ul class="dropbox">
+                        <li class="dropdown-item">
+                            <a class='link__hover-effect' href="#title1">Title 1</a>
+                            <i class="dropdown-button fas fa-caret-down"></i>
+                            <ol class="dropdown-list" style="display: none;">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ol>
+                            
+                              
+                        </li>
+                        <li class="dropdown-item">
+                            <a class='link__hover-effect' href="#about-me">About Me</a>
+                            <i class="dropdown-button fas fa-caret-down"></i>
+                            <ol class="dropdown-list" style="display: none;">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ol>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class='link__hover-effect' href="#writing">Writing</a>
+                            <i class="dropdown-button fas fa-caret-down"></i>
+                            <ol class="dropdown-list" style="display: none;">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ol>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class='link__hover-effect' href="#oral-development">Oral Development</a>
+                            <i class="dropdown-button fas fa-caret-down"></i>
+                            <ol class="dropdown-list" style="display: none;">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ol>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class='link__hover-effect' href="#professionalism">Professionalism</a>
+                            <i class="dropdown-button fas fa-caret-down"></i>
+                            <ol class="dropdown-list" style="display: none;">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ol>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class='link__hover-effect' href="#conclusion">Conclusion</a>
+                            <i class="dropdown-button fas fa-caret-down"></i>
+                            <ol class="dropdown-list" style="display: none;">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                  const buttons = document.querySelectorAll('.dropdown-button');
+                  buttons.forEach((button) => {
+                    const list = button.nextElementSibling;
+                    button.addEventListener('click', () => {
+                      list.style.display = (list.style.display === 'none') ? 'block' : 'none';
+                    });
+                  });
+                });
+              </script>
+              </div>   
+        </nav>
+	</header>
+	    <section id="title" onmousemove="moveBackground(event)">
+	    	<div class="title_container">
+                <div class="intro_container">
+                    <h1 class="title_intro">Hello,<br><b class="orange">I'm David</b></h1>
+                    <p class="title_intro-para">
+                        I am a <b class="orange">Business</b> Student with a passion for 
+                        <br> <b class="orange">Finance</b> and Web Development
+                        <br> Here's a bit more <a class='about_me orange link__hover-effect' onclick="toggleModal()">About me.</a>
+                    </p>
+                    <div class="social__list">
+                        <a href="https://www.linkedin.com/in/david-g-422116222/" target="_blank" class="social__link click"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/davidmgreenberg" target="_blank" class="social__link click"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                    <div class ="header_img">
+                        <img id ="my-face"  src="./resources/headshot.jpg"></img>
+                    </div>
+                    <div class="title_explain">
+                        <p class="title_explain-p">This site represents an <b class="orange">E-Porfolio</b> of the Business Communication Class at the University of Texas at Dallas. 
+                            <br>
+                            <br>
+                        We will explore multiple assignments completed throughout the semester, as well as give a representation of who I am as a person.
+                        </p>
+                    </div> 
+            </div>
+            <a href="#projects" class="scroll">
+                <div class="scroll__icon click">  </div>
+            </a>
+            <img class= "shape shape--0" src="./resources/semi circle.svg">
+            <img class= "shape shape--1" src="./resources/circle.svg">
+            <img class= "shape shape--2" src="./resources/squiggly.svg">
+            <img class= "shape shape--3" src="./resources/circle.svg">
+            <img class= "shape shape--4" src="./resources/triangle.svg">
+            <img class= "shape shape--5" src="./resources/circle.svg">
+            <img class= "shape shape--6" src="./resources/squiggly.svg">
+            <img class= "shape shape--7" src="./resources/circle.svg">
+            <img class= "shape shape--8" src="./resources/semi circle.svg">                     
+	    </section>
+    <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about">Here is a bit about me.</h3>
+            <h4 class="modal__sub-title modal__sub-title--about">Financial Analyst</h4>
+            <p class="modal__para">I'm a 20 year old student who is always trying to learn more about solving real world problems. As a finance major, I enjoy using programming to solve analytic problems and model trends. 
+                <br>
+                <b class="orange">As a student, I am always looking for ways to diversify my knowledge and learn new skills.</b>
+                <br>
+                My main goal with utilizing online tools is to create efficient, optimized, and responsive work platforms for everyone. 
+            <div class="modal__languages">
+                <figure class="modal__language"><img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt=""><span class="language__name">HTML</span></figure>
+                <figure class="modal__language"><img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt=""><span class="language__name">CSS</span></figure>
+                <figure class="modal__language"><img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt=""><span class="language__name">JScript</span></figure>
+                <figure class="modal__language"><img class="modal__language--img" src="./resources/py_logo.png" alt=""><span class="language__name">Python</span></figure>
+                <figure class="modal__language"><img class="modal__language--img" src="./resources/excel_icon.png" alt=""><span class="language__name">Excel</span></figure>
+                <figure class="modal__language"><img class="modal__language--img" src="./resources/powerbi_icon.png" alt=""><span class="language__name">PowerBI</span></figure>
+            </div>
+        </div>
+        <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+            <h3 class="modal__title modal__title--contact">
+                Let's have a chat!
+            </h3>
+            <h4 class="modal__sub-title modal__sub-title--contact">
+                I'm currently open to new oppertunities.
+            </h4>
+            <form id="contact__form" onsubmit="contact(event)">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input class="input" name="user_name" type="text" ></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input class="input" name="user_email" type="email" ></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea class="input" name="message" type="text" ></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit">Send it my way</button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thanks for the message! Looking forward to speaking to you soon.
+            </div>
+        </div>
+    </div>
+	<section id="writing">
+        <h1>Writing Section</h1>
+        <div class="reflection">
+		    <div class="writing-content">
+                <p class="writing_reflection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra.</p>
+            <!-- repeat the paragraph above as many times as needed to reach 250 words -->
+            </div>
+        </div>
+        <h3 class="h3_resume">Resume</h3>
+        <div class="writing_media">
+            <img class='my_resume' src="./resources/David-Greenberg Resume-1.png" alt="your-image-alt" />
+            <div class="writing_buttons">
+                <a download href="./resources/David-Greenberg Resume-1.png" class="link__hover-effect writingbtn btn-download">
+                    <i class="fas fa-download"></i>
+                    Download
+                </a>
+                <a href="https://www.linkedin.com/in/david-g-422116222/" class="link__hover-effect writingbtn btn-linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+          </div>
+
+           
+        <div class="email_container">
+            <h3 class="email_head">Corporate Email Revision & LinkedIn Community Engagement</h3>
+            <div class="email_and_linkedin">
+                <div class="email_img-wrapper">
+                    <img src="./resources/dg_email_assignment (1)-5.png" class="emailimg active">
+		            <img src="./resources/dg_email_assignment (1)-6.png" class="emailimg">
+		            <button class="email_btn" onclick="switchImage()">
+			        <i class="fas fa-images"></i>
+			            Flip Page
+		            </button>
+                </div>
+                <img src="./resources/xlcerts.png" alt="" class="xl_certs">
+                <img class="com_eng_img" src="./resources/ss_com_eng.png" alt="">
+            </div>
+        </div>
+
+        <div class="data_tracking">
+            
+            <div class="data-header-div"><h3 class="data-header">Data Tracking Assignment</h3></div>
+            <div class="real_data">
+            <iframe class="powerbi" title="AAPL_Final - Page 1" width="1000" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiZGUwZWU2ZDAtNjdhZS00YWRjLTg3ZWUtZDZiNjJlZjYxNDdjIiwidCI6IjhkMjgxZDFkLTljNGQtNGJmNy1iMTZlLTAzMmQxNWRlOWY2YyIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
+            <img class="data_para-img"src="./resources/data_para.png" alt="">
+            </div>
+            <canvas id="c"></canvas> 
+        </div>           
+        <script>
+
+            var c = document.getElementById("c");
+            var ctx = c.getContext("2d");
+            
+            //making the canvas full screen
+            c.height = window.innerHeight;
+            c.width = window.innerWidth;
+            
+            //english characters
+            var english = "1001010101110101010101010010101000101011101111010101010110101010101010101110000101";
+            //converting the string into an array of single characters
+            english = english.split("");
+            
+            var font_size = 15;
+            var columns = c.width/font_size; //number of columns for the rain
+            //an array of drops - one per column
+            var drops = [];
+            //x below is the x coordinate
+            //1 = y co-ordinate of the drop(same for every drop initially)
+            for(var x = 0; x < columns; x++)
+                drops[x] = 1; 
+            
+            //drawing the characters
+            function draw()
+            {
+                //Black BG for the canvas
+                //translucent BG to show trail
+                ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+                ctx.fillRect(0, 0, c.width, c.height);
+                
+                ctx.fillStyle = "#0F0"; //green text
+                ctx.font = font_size + "px arial";
+                //looping over drops
+                for(var i = 0; i < drops.length; i++)
+                {
+                    //a random chinese character to print
+                    var text = english[Math.floor(Math.random()*english.length)];
+                    //x = i*font_size, y = value of drops[i]*font_size
+                    ctx.fillText(text, i*font_size, drops[i]*font_size);
+                    
+                    //sending the drop back to the top randomly after it has crossed the screen
+                    //adding a randomness to the reset to make the drops scattered on the Y axis
+                    if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                        drops[i] = 0;
+                    
+                    //incrementing Y coordinate
+                    drops[i]++;
+                }
+            }
+            
+            setInterval(draw, 33);
+                </script>
+    
+    </section>
+
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my other <span class="orange">Writings</span>
+                </h1>
+                <div class="project_section">
+                    <div class="project__list">
+                        <div class="project">
+                            <div class="project__wrapper">
+                                <img class = "project__img" src="./resources/ftx.teaser.png" alt="">
+                                <div class="project__wrapper--bg"></div>
+                                <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        The Collapse of FTX
+                                    </h3>
+                                    <h4 class="project__description--sub-title">
+                                        Sam Bankman Fried Charged for Crypto Ponzi Scheme
+                                    </h4>
+                                    <p class="project__description--para">
+                                    This informative essay I wrote about the court case shows my competency as a writing through strong analytical information backed with real legal clauses. This shows that I am able to vastly alter my writing to suit the purpose of the paper.
+                                    </p>
+                                    <div class="project__description--links">
+                                        <figure class="modal__language"><a href="./resources/DavidGreenberg_BLAW2301_WritingAssignment+(1).pdf" class="project__description--link">
+                                            <i class="fa-solid fa-up-right-from-square"><span class="asaiicon language__name">Open</span></i>
+                                        </a></figure>
+                                        <figure class="modal__language"><a href="./resources/DavidGreenberg_BLAW2301_WritingAssignment+(1).pdf" download class="project__description--link">
+                                            <i class="fa fa-download"><span class="assiicon language__name">Download</span></i></figure>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project__wrapper">
+                                <img class = "project__img" src="./resources/email_snipppet.png" alt="">
+                                <div class="project__wrapper--bg"></div>
+                                <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        Email To Professor
+                                    </h3>
+                                    <h4 class="project__description--sub-title">
+                                        Competence in managing future conflicts
+                                    </h4>
+                                    <p class="project__description--para">
+                                        Due to a family obligation, I was unable to take the second test during the time period. I clarified this far in advance and made sure that another option could be managed sucessfully.
+                                    </p>
+                                    <div class="project__description--links">
+                                        <figure class="modal__language"><a href="./resources/email_snipppet.png" class="project__description--link">
+                                            <i class="fa-solid fa-up-right-from-square"><span class="asaiicon language__name">Open</span></i>
+                                        </a></figure>
+                                        <figure class="modal__language"><a href="./resources/email_snipppet.png" download class="project__description--link">
+                                            <i class="fa fa-download"><span class="assiicon language__name">Download</span></i></figure>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	<section id="oral-development">
+		<h1>Oral & Visual Communication</h1>
+        <div class="reflection">
+		    <div class="writing-content">
+                <p class="writing_reflection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra.</p>
+            <!-- repeat the paragraph above as many times as needed to reach 250 words -->
+            </div>
+        </div>
+        <h4 class="presentation_header">Presentation Reflection</h4>
+        <div class="slideshow_wrapper">
+            <iframe src="https://onedrive.live.com/embed?resid=9135C956C271A606%211548&amp;authkey=!AHDJgS_00TcBRd0&amp;em=2&amp;wdAr=1.7777777777777777" width="600px" height="400px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+            <p class="slideshow_para">This presentation was a great way to practice the public speaking skills we will need later in our careers. Overall, the group performed well in the presentation, and we delivered some asthetically pleasing slides to accompany us.<br><br> In the future, I would like to work more with the group to practice the transitions and speaking order. I would also like to work more on the physical aspects of presenting, such as: voie infleciton, hand motions, and eye contact. <br><br> Overall, this project was a good experience that taught us lessons about world health issues and public speaking. Not only were we able to practice public speaking with freedom, but we were also able to enrich our knowledge of the medical crisis today. </p>
+        </div>
+        <h4>Quinncia</h4>
+        <div class="quinncia_wrapper">
+            <img class='quinncia_img'src="./resources/quinncia.png" alt="">
+            <p class="quinncia_para">The Quinncia Resume Review and Interview served as a perfect resource for job readiness. <br><br>Nowadays, nearly every resume is read by artificial intelligence, and it is crucial that your resume gets processed rather than rejected by these algorithms. <br><br>Companies also use artificial intelligence for preliminary interviews using programs such as HireVue. <br><br>
+                The Quinncia practice Interview gave crucial feedback, such as slowing down speech, taking time to process the question, and using key words and phrases to demonstrate credibility.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some other documents demonstrating <span class="orange">Public Speaking</span>
+                </h1>
+                <div class="project_section">
+                    <div class="project__list">
+                        <div class="project">
+                            <div class="project__wrapper">
+                                <img class = "project__img" src="./resources/jpmhirevuenew.png" alt="">
+                                <div class="project__wrapper--bg"></div>
+                                <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        JPMorgan  HireVue
+                                    </h3>
+                                    <h4 class="intrv project__description--sub-title">
+                                        Online Interview
+                                    </h4>
+                                    <p class="project__description--para">
+                                    This was the first AI interview I ever took after doing the Quinncia mock interview. This was an excellent process to practice for interviews, and learn what the AI would most likely ask of you. Although it can be a bit frustrating talking to an AI computer program, it is still a good learning example for when you have a face to face interview at some point.
+                                    </p>
+                                    <div class="project__description--links">
+                                        <figure class="modal__language"><a href="./resources/jpmhirevuenew.png" class="project__description--link">
+                                            <i class="fa-solid fa-up-right-from-square"><span class="asaiicon language__name">Open</span></i>
+                                        </a></figure>
+                                        <figure class="modal__language"><a href="./resources/jpmhirevuenew.png" download class="project__description--link">
+                                            <i class="fa fa-download"><span class="assiicon language__name">Download</span></i></figure>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project__wrapper">
+                                <img class = "project__img" src="./resources/zoomgif.gif" alt="">
+                                <div class="project__wrapper--bg"></div>
+                                <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        Working With a Group Remotely
+                                    </h3>
+                                    <p class="project__description--para">
+                                        Our group primarily used remote contact to finish the project. During periods of class, we would schedule times where we would meet online to discuss and work on the project. During this period on zoom, we also issued out new tasks and ideas for each member to increase offline productivity. We rehearsed the presentation on zoom, and planned for the final presentation without ever having met in person to rehearse. While this may not be entirely optimal, we managed to be efficient and delivered a solid presentation in the end.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+	<section id="professionalism">
+		<p>First 30 characters of text goes here.</p>
+	</section>
+
+	<section id="conclusion">
+		<p>First 30 characters of text goes here.</p>
+	</section>
+
+</body>
+<script>
+    const images = document.querySelectorAll('.emailimg');
+const btn = document.querySelector('.email_btn')
+let activeImage = 0
+ function switchImage() {
+     images[activeImage].classList.remove('active');
+     activeImage = (activeImage === 0) ? 1 : 0;
+     images[activeImage].classList.add('active');
+ }
+</script>
+
+<script>
+    
+function contact(event) {
+    event.preventDefault();
+    const loading = document.querySelector('.modal__overlay--loading')
+    const success = document.querySelector('.modal__overlay--success')
+    loading.classList += ' modal__overlay--visible'
+    emailjs
+    .sendForm(
+        'service_w7454r5',
+        'template_wuls7zo',
+        event.target,
+        'LkdJZdKsXT5rhtj85'
+    ).then(() => {
+        loading.classList.remove('modal__overlay--visible')
+        success.classList += ' modal__overlay--visible'
+    }) .catch(() => {
+        loading.classList.remove('modal__overlay--visible')
+       alert(
+        "This email service is temporarily unavailable. Contact me on other platforms!"
+       )
+    })
+}
+
+
+let isModalOpen = false;
+
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen=false;
+        return document.body.classList.remove("modal--open");
+        
+    }
+    isModalOpen = true;
+ document.body.classList += " modal--open"   
+}
+</script>
+
+</html>
