@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-		<nav>
+		<nav class="sticky-nav">
             <div class="nav__container">
             <img id='personal-logo' src="./resources/David(1).png" alt="">
             <ul>
@@ -31,50 +31,38 @@
                     <a class='link__hover-effect' href ="#table-of-contents">Table of Contents</a>
                     <ul class="dropbox">
                         <li class="dropdown-item">
-                            <a class='link__hover-effect' href="#title1">Title 1</a>
-                            <i class="dropdown-button fas fa-caret-down"></i>
-                            <ol class="dropdown-list" style="display: none;">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                            </ol>
-                            
-                              
+                            <a class='link__hover-effect' href="#title">Title</a> 
                         </li>
                         <li class="dropdown-item">
-                            <a class='link__hover-effect' href="#about-me">About Me</a>
-                            <i class="dropdown-button fas fa-caret-down"></i>
-                            <ol class="dropdown-list" style="display: none;">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                            </ol>
+                            <a class='link__hover-effect' href='#title'onclick="toggleModal()">About Me</a>
                         </li>
                         <li class="dropdown-item">
                             <a class='link__hover-effect' href="#writing">Writing</a>
                             <i class="dropdown-button fas fa-caret-down"></i>
                             <ol class="dropdown-list" style="display: none;">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
+                                <li><a class='l_or' href="#resume">Resume</a></li>
+                                <li><a class='l_or' href="#email">Email</a></li>
+                                <li><a class='l_or' href="#email">LinkedIn</a></li>
+                                <li><a class='l_or' href="#data">Data Tracking</a></li>
+                                <li><a class='l_or' href="#projects1">Other Documents</a></li>
                             </ol>
                         </li>
                         <li class="dropdown-item">
                             <a class='link__hover-effect' href="#oral-development">Oral Development</a>
                             <i class="dropdown-button fas fa-caret-down"></i>
                             <ol class="dropdown-list" style="display: none;">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
+                                <li><a class='l_or' href="#prezent">Presentation</a></li>
+                                <li><a class='l_or' href="#prezent">Slides</a></li>
+                                <li><a class='l_or' href="#quin">Quinncia</a></li>
+                                <li><a class='l_or' href="#projects2">Other Projets</a></li>
                             </ol>
                         </li>
                         <li class="dropdown-item">
                             <a class='link__hover-effect' href="#professionalism">Professionalism</a>
                             <i class="dropdown-button fas fa-caret-down"></i>
                             <ol class="dropdown-list" style="display: none;">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
+                                <li><a class='l_or' href="#feedback">Feedback</a></li>
+                                <li><a class='l_or' href="#certs">Certifications</a></li>
                             </ol>
                         </li>
                         <li class="dropdown-item">
@@ -89,6 +77,7 @@
                     </ul>
                 </li>
             </ul>
+            
             <script>
                 document.addEventListener('DOMContentLoaded', () => {
                   const buttons = document.querySelectorAll('.dropdown-button');
@@ -198,7 +187,7 @@
             <!-- repeat the paragraph above as many times as needed to reach 250 words -->
             </div>
         </div>
-        <h3 class="h3_resume">Resume</h3>
+        <h3 id = 'resume' class="h3_resume">Resume</h3>
         <div class="writing_media">
             <img class='my_resume' src="./resources/David-Greenberg Resume-1.png" alt="your-image-alt" />
             <div class="writing_buttons">
@@ -214,7 +203,7 @@
           </div>
 
            
-        <div class="email_container">
+        <div id='email' class="email_container">
             <h3 class="email_head">Corporate Email Revision & LinkedIn Community Engagement</h3>
             <div class="email_and_linkedin">
                 <div class="email_img-wrapper">
@@ -236,7 +225,7 @@
             </div>
         </div>
 
-        <div class="data_tracking">
+        <div id='data' class="data_tracking">
             
             <div class="data-header-div"><h3 class="data-header">Data Tracking Assignment</h3></div>
             <div class="real_data">
@@ -301,7 +290,7 @@
     
     </section>
 
-        <div class="container">
+        <div id='projects1' class="container">
             <div class="row">
                 <h1 class="section__title">
                     Here are some of my other <span class="orange">Writings</span>
@@ -371,12 +360,12 @@
             <!-- repeat the paragraph above as many times as needed to reach 250 words -->
             </div>
         </div>
-        <h4 class="presentation_header">Presentation Reflection</h4>
+        <h4 id='prezent' class="presentation_header">Presentation Reflection</h4>
         <div class="slideshow_wrapper">
             <iframe src="https://onedrive.live.com/embed?resid=9135C956C271A606%211548&amp;authkey=!AHDJgS_00TcBRd0&amp;em=2&amp;wdAr=1.7777777777777777" width="600px" height="400px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
             <p class="slideshow_para">This presentation was a great way to practice the public speaking skills we will need later in our careers. Overall, the group performed well in the presentation, and we delivered some asthetically pleasing slides to accompany us.<br><br> In the future, I would like to work more with the group to practice the transitions and speaking order. I would also like to work more on the physical aspects of presenting, such as: voie infleciton, hand motions, and eye contact. <br><br> Overall, this project was a good experience that taught us lessons about world health issues and public speaking. Not only were we able to practice public speaking with freedom, but we were also able to enrich our knowledge of the medical crisis today. </p>
         </div>
-        <h4>Quinncia</h4>
+        <h4 id="quin">Quinncia</h4>
         <div class="quinncia_wrapper">
             <img class='quinncia_img'src="./resources/quinncia.png" alt="">
             <p class="quinncia_para"><b class="orange"> The Quinncia Resume Review and Interview served as a perfect resource for job readiness. </b>
@@ -384,7 +373,7 @@
                 <br><br><b class="orange">Companies also use artificial intelligence for preliminary interviews using programs such as HireVue. </b><br><br>
                 The Quinncia practice Interview gave crucial feedback, such as slowing down speech, taking time to process the question, and using key words and phrases to demonstrate credibility.</p>
         </div>
-        <div class="container">
+        <div id='projects2'class="container">
             <div class="row">
                 <h1 class="section__title">
                     Here are some other documents demonstrating <span class="orange">Public Speaking</span>
@@ -437,24 +426,34 @@
         </section>
 
 	<section id="professionalism">
-		<h1>Oral & Visual Communication</h1>
-        <div class="reflection">
+		<h1 class="prof_header">Professional Development Section</h1>
+        <div class="profreflection reflection">
 		    <div class="writing-content">
-                <p class="writing_reflection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra.</p>
+                <p class="p_ref_prof writing_reflection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra.</p>
             <!-- repeat the paragraph above as many times as needed to reach 250 words -->
             </div>
+            <div id='feedback' class="feedback_reflection">
+                <b class="orange">Feedback Reflection</b><br><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime iure molestiae hic a atque animi beatae accusamus ab, eveniet voluptatibus natus aperiam consequuntur odio temporibus facilis dolores sit! Laboriosam, corrupti eaque. Vitae quibusdam ut qui laudantium, excepturi dicta numquam dolorum exercitationem odio corporis. Ullam, quod? Veniam aut placeat culpa nemo distinctio, necessitatibus voluptates dicta esse alias quibusdam doloremque quod sequi vitae odio impedit. Optio nam laudantium explicabo labore unde ducimus molestias fugit minus cumque? Blanditiis, consequatur eveniet! Ratione quaerat velit harum porro eveniet, accusantium animi nisi alias nulla expedita error molestias autem aliquid fuga, praesentium nostrum? Quae voluptates est eligendi.
+            </div>
+            <div id = 'certs' class="cert_wrapper">
+                <img class='cert_img'src="./resources/excel_cert.png" alt="">
+                <img class='cert_img'src="./resources/linkedin_cert.png" alt="">
+                <img class='cert_img'src="./resources/ppt_cert.png" alt="">
+            </div>
+        </div>
             <script>
                 const colors = ["red", "green", "blue", "orange", "purple", "pink", "yellow"];
                 const shapes = ["circle", "square", "rectangle", "triangle", "trapezoid", "star", "pentagon", "hexagon", "octagon"];
 
           
                 const section = document.getElementById("professionalism");
-                for (let i = 0; i < 40; i++) {
+                for (let i = 0; i < 55; i++) {
                   const shape = document.createElement("div");
                   const randomShape = shapes[Math.floor(Math.random() * shapes.length)-3];
                   shape.classList.add("shape", randomShape);
                   shape.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                  shape.style.opacity = Math.random() * (0.12 - 0.05) + 0.05;
+                  shape.style.opacity = Math.random() * (0.1 - 0.05) + 0.05;
                   shape.style.top = `${Math.floor(Math.random() * (section.offsetHeight - shape.offsetHeight))}px`;
                   shape.style.left = `${Math.floor(Math.random() * (section.offsetWidth - shape.offsetWidth))}px`;
                   if (randomShape === "square" || randomShape === "rectangle") {
@@ -466,7 +465,7 @@
 	</section>
 
 	<section id="conclusion">
-		<p>First 30 characters of text goes here.</p>
+		<footer>Test</footer>
 	</section>
 
 </body>

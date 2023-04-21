@@ -17,7 +17,6 @@ html {
 
 header {
     width:100%;
-    height:15vh;
 }
 
 nav {
@@ -797,14 +796,58 @@ canvas {
 
 .quinncia_para {
     font-weight:300;
-    font-size:24px;
+    font-size:20px;
     max-width:425px;
+    text-align: center;
 }
 #professionalism {
     background-color: #dbdada;
     display:flex;
     position: relative;
     flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    padding:24px 36px;
+}
+
+
+.p_ref_prof {
+    padding:12px 0px;
+    border-top:1px solid #242424;
+    border-bottom:1px solid #242424;
+}
+
+.feedback_reflection {
+    padding:12px 0px;
+    font-weight:300;
+    font-size:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profreflection {
+display: flex;
+flex-direction: column;
+border:none;
+  }
+
+.cert_wrapper {
+    display: flex;
+    width:100%;
+    height:100%;
+    max-height:700px;
+    padding:32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert_img {
+    width: 100%;
+    height:100%;
+    padding:12px;
 }
 
 #conclusion {
@@ -830,6 +873,9 @@ ol {
 }
 /* .dropdown ul, */
 
+.l_or {
+    color: #f06449;
+}
 .dropdown-item ol {
 	display: none;
     background-color: transparent;
