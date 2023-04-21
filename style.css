@@ -37,7 +37,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:100%;
+    width:80%;
     height: 100%;
 }
 #personal-logo {
@@ -254,6 +254,16 @@ max-height:750px;
     color:black;
     font-size:24px;
 }
+.email_explainer {
+    width: 100%;
+    max-width:500px;
+    font-weight:300;
+    font-size:24px;
+    border:2px dotted #f06449;
+    padding:12px;
+    position: relative;
+    z-index:1;
+}
 
 .email_btn {
     position: absolute;
@@ -269,8 +279,10 @@ max-height:750px;
 }
 
 .com_eng_img  {
-    width:40%;
-    height:60%;
+    width:100%;
+    height:100%;
+    max-width:500px;
+    max-height:700px;
 }
 
 .xl_certs {
@@ -786,10 +798,13 @@ canvas {
 .quinncia_para {
     font-weight:300;
     font-size:24px;
-    max-width:300px;
+    max-width:425px;
 }
 #professionalism {
-    background-color: #b3b3b3;
+    background-color: #dbdada;
+    display:flex;
+    position: relative;
+    flex-direction: column;
 }
 
 #conclusion {
@@ -903,3 +918,176 @@ padding:4px;
         left:80vw;
     }
     
+    /* ARROWS */
+
+    .arrow {
+        font-size: 2rem;
+        margin: 0 0.5rem;
+        animation: pulse 1s infinite;
+      }
+      
+      .arrow-left {
+        color: blue;
+        animation-name: pulse-left;
+      }
+      
+      .arrow-right {
+        color: red;
+        animation-name: pulse-right;
+      }
+      
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      
+      @keyframes pulse-left {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); color: green; }
+        100% { transform: scale(1); color: blue; }
+      }
+      
+      @keyframes pulse-right {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); color: yellow; }
+        100% { transform: scale(1); color: red; }
+      }
+
+/* SHAPES */
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .square {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .rectangle {
+    width: 80px;
+    height: 50px;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid red;
+    border-bottom: 50px solid transparent;
+  }
+  
+  .trapezoid {
+    width: 60px;
+    height: 30px;
+    border-bottom: 50px solid red;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+  
+  .star {
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid red;
+    border-left: 50px solid transparent;
+    transform: rotate(35deg);
+  }
+  
+  .pentagon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  
+  .pentagon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid red;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+  }
+  
+  .pentagon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid red;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+  }
+  
+  .hexagon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  
+  .hexagon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid red;
+    border-left: 43.3px solid transparent;
+    border-right: 43.3px solid transparent;
+  }
+  
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid red;
+    border-left: 43.3px solid transparent;
+    border-right: 43.3px solid transparent;
+  }
+  
+  .octagon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  
+  .octagon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 20px;
+    height: 0;
+    border-bottom: 50px solid red;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+  
+  .octagon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: 20px;
+    height: 0;
+    border-top: 50px solid red;
+    border-left: 15px solid
+
+  }
+
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+  }

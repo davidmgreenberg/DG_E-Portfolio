@@ -218,14 +218,20 @@
             <h3 class="email_head">Corporate Email Revision & LinkedIn Community Engagement</h3>
             <div class="email_and_linkedin">
                 <div class="email_img-wrapper">
-                    <img src="./resources/dg_email_assignment (1)-5.png" class="emailimg active">
+                    <img src="./resources/emailassignment1.png" class="emailimg active">
 		            <img src="./resources/dg_email_assignment (1)-6.png" class="emailimg">
 		            <button class="email_btn" onclick="switchImage()">
 			        <i class="fas fa-images"></i>
 			            Flip Page
 		            </button>
                 </div>
-                <img src="./resources/xlcerts.png" alt="" class="xl_certs">
+                <p class="email_explainer">
+                    <i class="fas fa-arrow-left arrow arrow-left"></i>
+                    In the email assignment, we were tasked with providing revision tips and a rewritten email for upper management. Using comments and removals was a useful way to edit the document.
+                    <br><br>
+                    <i class="fas fa-arrow-right arrow arrow-right"></i>
+                    For the LinkedIn Community Engagement assignment, I attended a club fair in the JSOM building. Through this network, I was able to join the Financial Leadership Association as well as the Investments and Securities Club.
+                  </p>
                 <img class="com_eng_img" src="./resources/ss_com_eng.png" alt="">
             </div>
         </div>
@@ -373,7 +379,9 @@
         <h4>Quinncia</h4>
         <div class="quinncia_wrapper">
             <img class='quinncia_img'src="./resources/quinncia.png" alt="">
-            <p class="quinncia_para">The Quinncia Resume Review and Interview served as a perfect resource for job readiness. <br><br>Nowadays, nearly every resume is read by artificial intelligence, and it is crucial that your resume gets processed rather than rejected by these algorithms. <br><br>Companies also use artificial intelligence for preliminary interviews using programs such as HireVue. <br><br>
+            <p class="quinncia_para"><b class="orange"> The Quinncia Resume Review and Interview served as a perfect resource for job readiness. </b>
+                <br><br>Nowadays, nearly every resume is read by artificial intelligence, and it is crucial that your resume gets processed rather than rejected by these algorithms. 
+                <br><br><b class="orange">Companies also use artificial intelligence for preliminary interviews using programs such as HireVue. </b><br><br>
                 The Quinncia practice Interview gave crucial feedback, such as slowing down speech, taking time to process the question, and using key words and phrases to demonstrate credibility.</p>
         </div>
         <div class="container">
@@ -429,7 +437,32 @@
         </section>
 
 	<section id="professionalism">
-		<p>First 30 characters of text goes here.</p>
+		<h1>Oral & Visual Communication</h1>
+        <div class="reflection">
+		    <div class="writing-content">
+                <p class="writing_reflection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra.</p>
+            <!-- repeat the paragraph above as many times as needed to reach 250 words -->
+            </div>
+            <script>
+                const colors = ["red", "green", "blue", "orange", "purple", "pink", "yellow"];
+                const shapes = ["circle", "square", "rectangle", "triangle", "trapezoid", "star", "pentagon", "hexagon", "octagon"];
+
+          
+                const section = document.getElementById("professionalism");
+                for (let i = 0; i < 40; i++) {
+                  const shape = document.createElement("div");
+                  const randomShape = shapes[Math.floor(Math.random() * shapes.length)-3];
+                  shape.classList.add("shape", randomShape);
+                  shape.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                  shape.style.opacity = Math.random() * (0.12 - 0.05) + 0.05;
+                  shape.style.top = `${Math.floor(Math.random() * (section.offsetHeight - shape.offsetHeight))}px`;
+                  shape.style.left = `${Math.floor(Math.random() * (section.offsetWidth - shape.offsetWidth))}px`;
+                  if (randomShape === "square" || randomShape === "rectangle") {
+                    shape.style.borderRadius = "0%";
+                  }
+                  section.appendChild(shape);
+                }
+              </script>
 	</section>
 
 	<section id="conclusion">
