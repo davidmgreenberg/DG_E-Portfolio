@@ -148,7 +148,7 @@ section {
 .title_container {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     padding:12px 18px;
 
 }
@@ -159,6 +159,9 @@ section {
 }
 .title_explain {
     width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .title_intro {
     font-size:56px;
@@ -170,6 +173,20 @@ section {
     font-weight:500;
 }
 
+.intro_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width:500px;
+}
+
+.header_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:2;
+    padding: 0px 12px;
+}
 .orange {
     color:#f06449
 }
@@ -206,8 +223,6 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-top: 1px solid #b3b3b3;
-    border-bottom: 1px solid #b3b3b3;
     padding: 20px 12px;
   }
   
@@ -243,6 +258,12 @@ font-size:32px;
     padding:8px 20px;
     align-items: center;
   }
+
+.writing_reflection {
+    border-top:1px solid #242424;
+    border-bottom:1px solid #242424;
+    padding: 8px 0px;
+}
 .my_resume {
 max-width:500px;
 max-height:750px;
@@ -253,17 +274,19 @@ max-height:750px;
     color:black;
     font-size:24px;
 }
-.email_explainer {
-    width: 100%;
-    max-width:500px;
-    font-weight:300;
-    font-size:24px;
-    border:2px dotted #f06449;
-    padding:12px;
-    position: relative;
-    z-index:1;
+
+.email_explainer-container {
+display: flex;
+width:100%;
+justify-content: space-between;
+align-items: center;
 }
 
+.email_explainer {
+    font-weight:300;
+    font-size: 20px;
+    width:45%;
+}
 .email_btn {
     position: absolute;
     top: 90%;
@@ -282,14 +305,10 @@ max-height:750px;
     height:100%;
     max-width:500px;
     max-height:700px;
+padding-left:24px;
 }
 
-.xl_certs {
-    width: 20%;
-    height:35%;
-    padding-left:16px;
-    margin:0 12px;
-}
+
 
 .email_and_linkedin {
     display: flex;
@@ -660,9 +679,9 @@ animation: spinner 750ms infinite;
     height: fit-content;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid #b3b3b3;
-    border-bottom: 1px solid #b3b3b3;
     padding:12px 18px;
+    border-top:1px solid #242424;
+    border-bottom:1px solid #242424;
 }
 
 .email_head {
@@ -670,25 +689,33 @@ animation: spinner 750ms infinite;
     padding:12px 0px;
 }
 
+.right_email {
+    width:66%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .email_img-wrapper {
-    width:500px;
     display:inline-block;
     justify-content: center;
     align-items: center;
     position: relative;
-    height:750px;
+    width:500px;
+    height:700px;
 }
 
 
 
 .emailimg {
-    width:500px;
-    height: 700px;
+    max-width:500px;
+    max-height: 700px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-	top: 4%;
-	left: 4%;
+	top: 0%;
+	left: 0%;
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;    
 }
@@ -760,7 +787,6 @@ canvas {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-bottom:1px solid #a6a6a6;
 }
 .slideshow_para {
     font-weight:300;
@@ -780,7 +806,8 @@ canvas {
     padding:24px 0px;
     align-items: center;
     justify-content:space-around;
-    border-bottom:1px solid #a6a6a6;
+    border-top:1px solid #242424;
+    border-bottom:1px solid #242424;
 
 }
 
@@ -814,12 +841,10 @@ canvas {
 
 .p_ref_prof {
     padding:12px 0px;
-    border-top:1px solid #242424;
-    border-bottom:1px solid #242424;
 }
 
 .feedback_reflection {
-    padding:12px 0px;
+    padding:18px 0px;
     font-weight:300;
     font-size:30px;
     display: flex;
@@ -832,13 +857,13 @@ canvas {
 display: flex;
 flex-direction: column;
 border:none;
+width:100%;
   }
 
 .cert_wrapper {
     display: flex;
     width:100%;
     height:100%;
-    max-height:700px;
     padding:32px;
     align-items: center;
     justify-content: center;
@@ -848,10 +873,45 @@ border:none;
     width: 100%;
     height:100%;
     padding:12px;
+    max-width:425px;
+    max-height:600px;
 }
 
 #conclusion {
     background-color: #a6a6a6;
+    width:100%;
+    padding:24px 36px;
+    height:fit-content
+}
+
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding:36px 24px;
+}
+
+.footer_img {
+    max-width:500px;
+    max-height:500px;
+}
+
+.footer-btn{
+font-size:28px;
+padding:42px;
+margin-right:0;
+margin:0 40px;
+}
+
+.footer_p {
+    font-weight:300;
+    font-size:24px;
+    width:30%;
+}
+
+.midpb {
+    margin: 0 18px;
 }
 
 ol {

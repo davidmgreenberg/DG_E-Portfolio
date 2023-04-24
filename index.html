@@ -25,8 +25,8 @@
             <div class="nav__container">
             <img id='personal-logo' src="./resources/David(1).png" alt="">
             <ul>
-                <li><a class='link__hover-effect' href="#contact">Contact</a></li>
-                <li><a class='link__hover-effect' href="#references">References</a></li>
+                <li><a class='link__hover-effect' href='#top' onClick="toggleModal()">Contact</a></li>
+                <li><a class='link__hover-effect' href="https://github.com/davidmgreenberg/DG_E-Portfolio">References</a></li>
                 <li class="dropdown">
                     <a class='link__hover-effect' href ="#table-of-contents">Table of Contents</a>
                     <ul class="dropbox">
@@ -67,12 +67,6 @@
                         </li>
                         <li class="dropdown-item">
                             <a class='link__hover-effect' href="#conclusion">Conclusion</a>
-                            <i class="dropdown-button fas fa-caret-down"></i>
-                            <ol class="dropdown-list" style="display: none;">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                            </ol>
                         </li>
                     </ul>
                 </li>
@@ -97,8 +91,7 @@
                 <div class="intro_container">
                     <h1 class="title_intro">Hello,<br><b class="orange">I'm David</b></h1>
                     <p class="title_intro-para">
-                        I am a <b class="orange">Business</b> Student with a passion for 
-                        <br> <b class="orange">Finance</b> and Web Development
+                        I am a <b class="orange">Business</b> Student with a passion for <b class="orange">Finance</b> and Web Development
                         <br> Here's a bit more <a class='about_me orange link__hover-effect' onclick="toggleModal()">About me.</a>
                     </p>
                     <div class="social__list">
@@ -183,7 +176,8 @@
         <h1>Writing Section</h1>
         <div class="reflection">
 		    <div class="writing-content">
-                <p class="writing_reflection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra.</p>
+                <p class="writing_reflection">As an analytical thinker, my writing skills reflect that through technical knowledge and logical reasoning. I tend to structure my writing and keep a strong sense of organization throughout, as a way to ensure that the logical sense of the argument follows through. My personal writing skills allow me to present my thoughts clearly and concisely, which I believe to be one of the most effective ways to communicate efficiently. This also allows me to use other people's works and properly credit and source them to increase credibility and sensibility in the argument. However, my analytical writing style tends to discourage me from injecting creativity and personality into my writing. Since there is such a strong emphasis on logic and reasoning, my own personal commentary seems out of place in such a writing. As a way to develop a more free-flowing writing style, I have been exploring more styles of writing. Although approaching writing from a more story-telling perspective seems out of place for me, it is essential to find a deeper connection to both the writing and the reader. Overall, my analytical writing skills allow me to flourish in areas that I enjoy, such as finance and data analytics. I know that there is more that I can learn, however, to become a more well-rounded writer.
+                </p>
             <!-- repeat the paragraph above as many times as needed to reach 250 words -->
             </div>
         </div>
@@ -214,14 +208,17 @@
 			            Flip Page
 		            </button>
                 </div>
+                <img class="com_eng_img" src="./resources/ss_com_eng.png" alt="">
+            </div>
+            <div class="email_explainer-container">
                 <p class="email_explainer">
                     <i class="fas fa-arrow-left arrow arrow-left"></i>
                     In the email assignment, we were tasked with providing revision tips and a rewritten email for upper management. Using comments and removals was a useful way to edit the document.
-                    <br><br>
+                </p>
+                <p class="email_explainer">   
                     <i class="fas fa-arrow-right arrow arrow-right"></i>
                     For the LinkedIn Community Engagement assignment, I attended a club fair in the JSOM building. Through this network, I was able to join the Financial Leadership Association as well as the Investments and Securities Club.
                   </p>
-                <img class="com_eng_img" src="./resources/ss_com_eng.png" alt="">
             </div>
         </div>
 
@@ -356,7 +353,7 @@
 		<h1>Oral & Visual Communication</h1>
         <div class="reflection">
 		    <div class="writing-content">
-                <p class="writing_reflection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra.</p>
+                <p class="writing_reflection">In the past, I had a lot of trouble speaking in front of a public audience. I would obsess over the small details, and become fearful up until the point that I would have to go up and present. After presenting, a wave of relief would wash over me, and I would forget all the anxiety I had felt. That is, up until the point of my next presentation. During my first year of college, I had to take a Business Scholars class at the University of Utah. In this class, we were expected to work as groups to create presentations every two weeks. Because of this high volume of presentations, I had no time to build up anxiety or worry about how it was going to play out. After this class, I was finally able to publicly speak without abnormal fear or anxiety. Because of this class and many other experiences throughout my time in college, my public speaking skills have improved dramatically. In the business communication class, we were able to demonstrate our skill in a presentation covering one of the UN’s world goals. This presentation was a crucial part of the course, and it provided the first true experience to practice speaking skills in front of a live audience of our peers. The presenting experience was overall very useful and informative in learning how people speak and react to presentations.</p>
             <!-- repeat the paragraph above as many times as needed to reach 250 words -->
             </div>
         </div>
@@ -419,6 +416,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -429,17 +427,73 @@
 		<h1 class="prof_header">Professional Development Section</h1>
         <div class="profreflection reflection">
 		    <div class="writing-content">
-                <p class="p_ref_prof writing_reflection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque at blandit pulvinar, metus arcu convallis tellus, ut euismod tortor mi et nisl. Morbi suscipit efficitur odio, eget pharetra eros feugiat non. Praesent vel augue non massa viverra aliquam. Sed ac orci ut odio dictum iaculis vel ut lacus. Sed eu magna et eros venenatis dignissim a vel ex. Donec tincidunt justo risus, quis tristique arcu tristique eu. Nunc quis sagittis ex. Aenean eu sem in odio bibendum eleifend quis nec augue. Pellentesque eget lacus enim. Nulla hendrerit volutpat arcu vel bibendum. Fusce tincidunt ipsum vel orci molestie, nec tristique ante dapibus. Sed facilisis, dolor ac dignissim tempor, sapien enim euismod lacus, nec vestibulum libero elit vel orci. Nulla facilisi. Nulla facilisi. Suspendisse finibus in massa quis pharetra.</p>
+                <p class="p_ref_prof writing_reflection">The business communications class has been an effective tool in improving my professionalism skills. In class, we interacted in multiple peer activities, mostly revisions of others' works. Giving and receiving feedback was a crucial way to develop my own critical thinking skills, as well as practice effective horizontal communication. This class has shown that professional development is a collaborative process that requires multiple facets of learning and growth. I will continue to use constructive criticism and feedback as a way to improve my personal attributes. In this section, we will explore the Quinncia activity, which benefited my professionalism greatly. The service provided in depth AI resume reviews, as well as a review on a mock interview. Both of these skills are essential for creating opportunity in the business world. This also helped me identify my strengths and weaknesses, and primarily the areas I need to focus in. Additionally, the linkedIn Learning Certifications were a fantastic tool to build a baseline of professional skills and communicate that to whoever sees them. This class provided a great baseline to start building my professional career, through networking information, job application preparation, and personal development through peer revisions and collaboration.</p>
             <!-- repeat the paragraph above as many times as needed to reach 250 words -->
             </div>
             <div id='feedback' class="feedback_reflection">
-                <b class="orange">Feedback Reflection</b><br><br>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime iure molestiae hic a atque animi beatae accusamus ab, eveniet voluptatibus natus aperiam consequuntur odio temporibus facilis dolores sit! Laboriosam, corrupti eaque. Vitae quibusdam ut qui laudantium, excepturi dicta numquam dolorum exercitationem odio corporis. Ullam, quod? Veniam aut placeat culpa nemo distinctio, necessitatibus voluptates dicta esse alias quibusdam doloremque quod sequi vitae odio impedit. Optio nam laudantium explicabo labore unde ducimus molestias fugit minus cumque? Blanditiis, consequatur eveniet! Ratione quaerat velit harum porro eveniet, accusantium animi nisi alias nulla expedita error molestias autem aliquid fuga, praesentium nostrum? Quae voluptates est eligendi.
+                <b class="orange">Feedback Reflection</b><br>
+                The feedback recieved in class was imperitive to growing the professional development of each student. One of the most important skills to learn in the workplace is how to give and recieve constructive critisism. Everyone is going to recieve some form of constructive criticism in their line of work, and it is essential to know how to use that knowledge to modify your current situation. Additionally, It is just as important to be able to give constructive criticism to properly aid your fellow employees and people around you. It is far more essential to practice these skills in a non threatening enviornment, rather than a job where there can be far more dire consequences for improper interpretation of expression of criticism. The Quinncia activities also provided essential forms of feedback, from the interactive mock interview to the resume review. Both gave written feedback that described areas of strengths and weaknesses. This was important to show the user what was properly executed, and what could use further improvement.
             </div>
-            <div id = 'certs' class="cert_wrapper">
-                <img class='cert_img'src="./resources/excel_cert.png" alt="">
-                <img class='cert_img'src="./resources/linkedin_cert.png" alt="">
-                <img class='cert_img'src="./resources/ppt_cert.png" alt="">
+            <div class="project_section">
+                <div class="project__list">
+                    <div class="project">
+                        <div class="project__wrapper">
+                            <img class = "project__img" src="./resources/excel_cert.png" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h4 class="project__description--sub-title">
+                                    Excel: You Can Do This
+                                </h4>
+                                <p class="project__description--para">
+                                This informative essay I wrote about the court case shows my competency as a writing through strong analytical information backed with real legal clauses. This shows that I am able to vastly alter my writing to suit the purpose of the paper.
+                                </p>
+                                <div class="project__description--links">
+                                    <figure class="modal__language"><a href="./resources/excel_cert.png" class="project__description--link">
+                                        <i class="fa-solid fa-up-right-from-square"><span class="asaiicon language__name">Open</span></i>
+                                    </a></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="midpb project">
+                        <div class="project__wrapper">
+                            <img class = "project__img" src="./resources/linkedin_cert.png" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h4 class="project__description--sub-title">
+                                    Learning LinkedIn for Students
+                                </h4>
+                                <p class="project__description--para">
+                                    Due to a family obligation, I was unable to take the second test during the time period. I clarified this far in advance and made sure that another option could be managed sucessfully.
+                                </p>
+                                <div class="project__description--links">
+                                    <figure class="modal__language"><a href="./resources/linkedin_cert.png" class="project__description--link">
+                                        <i class="fa-solid fa-up-right-from-square"><span class="asaiicon language__name">Open</span></i>
+                                    </a></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__wrapper">
+                            <img class = "project__img" src="./resources/ppt_cert.png" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h4 class="project__description--sub-title">
+                                    PowerPoint: Slide Design Makeover
+                                </h4>
+                                <p class="project__description--para">
+                                    Due to a family obligation, I was unable to take the second test during the time period. I clarified this far in advance and made sure that another option could be managed sucessfully.
+                                </p>
+                                <div class="project__description--links">
+                                    <figure class="modal__language"><a href="./resources/ppt_cert.png" class="project__description--link">
+                                        <i class="fa-solid fa-up-right-from-square"><span class="asaiicon language__name">Open</span></i>
+                                    </a></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
             <script>
@@ -465,7 +519,11 @@
 	</section>
 
 	<section id="conclusion">
-		<footer>Test</footer>
+		<footer class="footer_wrapper">
+            <p class="footer_p">If you have made it this far, thank you for reading my E-Portfolio! I will use the skills and knowledge I learned designing this website in my future career path of Finance and Data Analytics. The web development made for this site is crucial to finance, because it allows the user to create visualizations of otherwise statistical measures. This was also explored in the Data Tracking Assignment. Please <a href='#top' onclick='toggleModal()' class="orange">contact me</a> if you have any further information!</p>
+            <a href="#top" class="footer-btn social__link click">Top</a>
+            <img class="footer_img" src="./resources/finance.gif" alt="">
+        </footer>
 	</section>
 
 </body>
