@@ -1,0 +1,12 @@
+David Greenberg
+E-Portfolio Sources
+
+All coding was done by hand using HTML, CSS, and Javascript.
+
+Finance Gif: https://www.newus.in/Banking-and-finance
+
+Zoom Gif: https://www.nytimes.com/article/zoom-privacy-lessons.html
+
+
+All other digital assets were created using programming or previously existed in my portfolio.
+

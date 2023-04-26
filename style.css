@@ -91,6 +91,58 @@ nav ul li ul li {
     padding: 0;
 }
 
+.left_nav {
+width:100%;
+height:100%;
+display: flex;
+align-items: center;
+justify-content:left;
+}
+
+#world_lang {
+    padding-left:36px;
+    font-size:24px;
+    font-weight:700;
+    color:black;
+    transition: opacity 5 ease-in-out;
+    animation: color-transition 20s forwards infinite;
+}
+
+  @keyframes color-transition {
+    0% {
+      color: black;
+    }
+    10% {
+        color:red;
+    }
+    20% {
+       color: yellow;
+    }
+    30% {
+        color: green;
+    }
+    40% {
+        color: blue;
+    }
+    50% {
+      color: white;
+    }
+    60% {
+        color:blue;
+    }
+    70% {
+       color: green;
+    }
+    80% {
+        color: yellow;
+    }
+    90% {
+        color: red;
+    }
+    100% {
+        color:black;
+    }
+  }
 section {
     height: 100vh;
     display: flex;
@@ -99,6 +151,7 @@ section {
     font-size: 36px;
     font-weight: bold;
     z-index:0;
+    padding-bottom:24px;
 }
 
 #my-face {
@@ -131,9 +184,9 @@ section {
     background-color: #f06449;
     color: white;
     padding:6px;
-    width:32px;
-    height:32px;
-    font-size:14px;
+    width:50px;
+    height:50px;
+    font-size:24px;
     margin-right:12px;
     display: flex;
     justify-content: center;
@@ -262,7 +315,8 @@ font-size:32px;
 .writing_reflection {
     border-top:1px solid #242424;
     border-bottom:1px solid #242424;
-    padding: 8px 0px;
+    padding: 16px 0px;
+    font-size:22px;
 }
 .my_resume {
 max-width:500px;
@@ -313,7 +367,7 @@ padding-left:24px;
 .email_and_linkedin {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width:100%;
     height:fit-content;
     align-items: center;
@@ -679,14 +733,14 @@ animation: spinner 750ms infinite;
     height: fit-content;
     flex-direction: column;
     align-items: center;
-    padding:12px 18px;
+    padding:32px 18px;
     border-top:1px solid #242424;
     border-bottom:1px solid #242424;
 }
 
 .email_head {
     width: fit-content;
-    padding:12px 0px;
+    padding-bottom:30px;
 }
 
 .right_email {
@@ -729,6 +783,17 @@ animation: spinner 750ms infinite;
 width: fit-content;
 z-index:5;
 color:white;
+}
+
+.data_explain {
+    padding:36px 20px;
+    color:white;
+    font-weight:300;
+    z-index:5;
+    background: rgba(119, 118, 118, 0.671);
+    line-height:150%;
+    font-size:24px;
+    
 }
 
 canvas {
@@ -800,13 +865,19 @@ canvas {
     padding:12px 0;
 }
 
+#quin {
+    width:100%;
+    border-top: 1px solid #1c1d25;
+    text-align: center;
+    padding:24px 0px 18px 0px;
+}
+
 .quinncia_wrapper {
     width: 100%;
     display: flex;
     padding:24px 0px;
     align-items: center;
     justify-content:space-around;
-    border-top:1px solid #242424;
     border-bottom:1px solid #242424;
 
 }
@@ -841,6 +912,10 @@ canvas {
 
 .p_ref_prof {
     padding:12px 0px;
+}
+
+.feedback_re {
+    padding-bottom:12px;
 }
 
 .feedback_reflection {
@@ -878,7 +953,7 @@ width:100%;
 }
 
 #conclusion {
-    background-color: #a6a6a6;
+    background-color: #c0bdbd;
     width:100%;
     padding:24px 36px;
     height:fit-content
@@ -907,7 +982,8 @@ margin:0 40px;
 .footer_p {
     font-weight:300;
     font-size:24px;
-    width:30%;
+    width:50%;
+    line-height:150%;
 }
 
 .midpb {
@@ -978,6 +1054,7 @@ padding-top: 8px;
  
   .about_me {
 padding:4px;
+border-bottom:1px solid #f06449;
   }
 
 
